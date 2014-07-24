@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doula</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/doula.css">
+  </head>
+  <body>
+    <script>
+      window.DoulaENV = {{ENV}};
+      window.EmberENV = window.DoulaENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/doula.js"></script>
+    <script>
+      window.Doula = require('doula/app')['default'].create(DoulaENV.APP);
+    </script>
+  </body>
+</html>

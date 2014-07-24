@@ -1,0 +1,11 @@
+<h3>Clients</h3>
+
+<ul>
+  {{#each}}
+    <li>{{link-to name 'clients.client' this.id}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
+
+
