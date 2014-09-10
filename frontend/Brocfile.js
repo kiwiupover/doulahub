@@ -17,4 +17,14 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('vendor/rails-csrf/dist/named-amd/main.js', {
+  exports: {
+    'rails-csrf': [
+      'service'
+    ]
+  }
+});
+
+// app.import('node_modules/ember-cli-spinjs/vendor/spinjs/spin.js');
+
 module.exports = app.toTree();

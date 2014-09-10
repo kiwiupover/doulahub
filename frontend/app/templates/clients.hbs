@@ -1,11 +1,13 @@
 <h3>Clients</h3>
 
-<ul>
-  {{#each}}
-    <li>{{link-to name 'clients.client' this.id}}</li>
-  {{/each}}
-</ul>
+<div class="columns large-3">
+  <ul>
+    {{#each}}
+      <li>{{link-to name 'clients.client' this.id}}</li>
+    {{/each}}
+  </ul>
+</div>
 
-{{outlet}}
-
-
+<div class="columns large-9">
+  {{outlet}}
+</div>

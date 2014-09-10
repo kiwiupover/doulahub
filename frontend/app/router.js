@@ -8,6 +8,8 @@ Router.map(function() {
   this.resource('clients', function(){
     this.route('client', {path: ':client_id'});
   });
+
+  this.route('login');
 });
 
 export default Router;
